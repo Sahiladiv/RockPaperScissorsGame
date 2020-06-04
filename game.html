@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>RockPaper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <h2 id="title" style="text-align:center;"> ROCK!&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPAPER!&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSCISSORS! </h2>
+    <div id="threeButtons">
+
+
+  <button  type="button" name="button" onclick="userChoice('rock') ">ROCK</button>
+  <button  type="button" name="button" onclick="userChoice('paper')">PAPER</button>
+  <button  type="button" name="button" onclick="userChoice('scissors')">SCISSORS</button>
+
+    </div>
+
+<script>
+
+
+
+      function userChoice(userInput){
+        this.userInput=userInput;
+
+        //alert("Hi");
+
+
+        if(userInput ==='rock' || userInput==='paper' || userInput=== 'scissors'){
+        var userchoice=userInput;
+
+
+        }
+        computerChoice(userInput);
+
+      }
+
+//alert('hi');
+
+
+      function computerChoice(userInput){
+        //alert('hi');
+        this.userInput=userInput;
+        var computerInput=Math.floor(Math.random() * 3);
+
+        if(computerInput==0){
+          computerInput='rock';
+        }
+        if(computerInput==1){
+          computerInput='paper';
+        }
+        if(computerInput==2){
+          computerInput='scissors';
+        }
+
+
+      //  alert(computerInput);
+        determineWinner(computerInput,userInput);
+
+      }
+
+      function determineWinner(i,j){
+
+        if(i==='rock' && j==='scissors'){
+          alert("Computer Wins!");
+        }
+        if(i==='rock' && j==='paper'){
+        alert("Player Wins!");
+        }
+        if(i==='paper' && j==='scissors'){
+          alert("Player Wins!");
+        }
+        if(i==='paper' && j==='rock'){
+          alert("Computer Wins!");
+        }
+        if(i==='scissors' && j==='rock'){
+          alert("Player Wins!");
+        }
+        if(i==='scissors' && j==='rock'){
+          alert("Computer Wins!");
+        }
+        if (i === j){
+          alert("It\'s A Tie");
+        }
+      }
+
+</script>
+
+
+  </body>
+</html>

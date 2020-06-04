@@ -1,0 +1,27 @@
+#threeButtons{
+
+  margin-left:10%;
+  margin-top: 20%;
+  /*align-items: center;*/
+}
+
+button{
+
+  width:30%;
+  height: 100px;
+  font-size: 40px;
+  /*height:70%;*/
+
+
+
+}
+button:hover{
+    background-color: #e6e6e6;
+    border-radius: 10%;
+}
+
+#title{
+  background-color: #606060;
+  color:white;
+  padding: 2%;
+}
