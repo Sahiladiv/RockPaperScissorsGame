@@ -20,44 +20,44 @@
 
 <script>
 
+//var array=[rock,paper,scissors]
+
+      function userChoice(usersInput){
+        this.usersInput=usersInput;
+
+        
 
 
-      function userChoice(userInput){
-        this.userInput=userInput;
-
-        //alert("Hi");
-
-
-        if(userInput ==='rock' || userInput==='paper' || userInput=== 'scissors'){
-        var userchoice=userInput;
+        if(usersInput ==='rock' || usersInput==='paper' || userInput=== 'scissors'){
+        var userchoice=userssInput;
 
 
         }
-        computerChoice(userInput);
+        computerChoice(usersInput);
 
       }
 
 //alert('hi');
 
 
-      function computerChoice(userInput){
-        //alert('hi');
-        this.userInput=userInput;
-        var computerInput=Math.floor(Math.random() * 3);
+      function computerChoice(usersInput){
+        
+        this.usersInput=usersInput;
+        var computersInput=Math.floor(Math.random() * 3);
 
-        if(computerInput==0){
-          computerInput='rock';
+        if(computersInput==0){
+          computersInput='rock';
         }
-        if(computerInput==1){
-          computerInput='paper';
+        if(computersInput==1){
+          computersInput='paper';
         }
-        if(computerInput==2){
-          computerInput='scissors';
+        if(computersInput==2){
+          computersInput='scissors';
         }
 
 
       //  alert(computerInput);
-        determineWinner(computerInput,userInput);
+        determineWinner(computersInput,usersInput);
 
       }
 
